@@ -1,141 +1,123 @@
-🎬 MOVIE SCHEDULING SYSTEM (C Programming)
+🎬 MOVIE SCHEDULING SYSTEM
+
+(Greedy Algorithm – Activity Selection Method)
+
 📄 ABSTRACT
 
-The Movie Scheduling System is a terminal-based application developed in C that helps manage movie show schedules efficiently for cinemas or multiplexes.
-It allows users to add, view, search, update, and delete movie schedule records using a simple menu-driven interface.
+The Movie Scheduling System is a C-based console application designed to generate an optimal schedule of non-overlapping movies in a single screen or theatre.
+The program takes the start and end times of multiple movies as input, sorts them based on their ending times, and then selects the maximum number of movies using the Greedy Algorithm (Activity Selection Problem).
 
-All schedule data is stored in a binary file (movie.txt) to ensure persistence across multiple program runs.
-
-This project highlights essential C programming concepts like structures, file handling, loops, conditional statements, and modular programming—making it ideal for beginners, academic submissions, and practical learning.
+This project demonstrates essential C programming concepts such as structures, sorting techniques, control flow, and greedy strategy. It is ideal for academic coursework, lab submissions, and concept demonstrations.
 
 ✨ FEATURES
 Core Functionalities
 
-🎬 Add New Movie Schedule
-(Movie ID, Movie Name, Show Time, Date, Screen No, Ticket Price)
-
-📋 Display All Movie Schedules
-Formatted table view for easy readability
-
-🔍 Search Schedule by Movie ID
-
-✏️ Update Schedule Information
-
-❌ Delete Movie Schedule Record
-
-💾 Persistent Data Storage in binary file (movie.txt)
-
-🖥️ Fully Terminal-Based & Menu-Driven
-
-👨‍💻 Beginner-friendly modular code
-
-⚙️ Automatically creates movie.txt if missing
-
-⚠️ Includes basic input validation & error handling
+🎬 Accepts start & end timings for multiple movies
+⚙️ Sorts all movies by end time automatically
+🎯 Applies Greedy Algorithm to choose compatible movies
+📋 Displays the optimal schedule
+🧮 Shows total number of movies that can be scheduled
+🖥️ Simple terminal-based interface
+👨‍💻 Beginner-friendly logic
 
 🛠️ TECHNICAL REQUIREMENTS
 System Requirements
 
-Operating System: Windows / Linux / macOS
+Windows / Linux / macOS
 
-Terminal or Command Prompt
+Terminal / Command Prompt
 
-Minimum 4 MB RAM
-
-Small disk space for movie.txt
+Minimum RAM: 4 MB
 
 Software Requirements
 
-C Compiler: GCC / Clang / MSVC / MinGW
+C Compiler: GCC / Clang / MinGW / MSVC
 
-Code Editor: VS Code / Code::Blocks / Dev-C++ / Turbo C / etc.
-
-(Optional) Make utility
+Code Editor (VS Code / Code::Blocks / Dev-C++ / Notepad++)
 
 Programming Requirements
 
 Language: C
 
-Standard: C89 / C99 / C11
+Concepts Used:
 
-Header Files Used:
+Structures
 
-stdio.h
+Sorting (qsort comparator)
 
-stdlib.h
+Greedy Algorithm
 
-string.h
+Conditional checks
 
-File Handling
-
-Binary file storage: movie.txt
-
-Auto-creates file if not present
-
-Read/Write permissions required
+Loops and arrays
 
 📌 FUNCTIONAL REQUIREMENTS
 User Interface
 
-Terminal-based CLI
+Console-based
 
-Clear, simple menu
+Interactive prompts for entering movie details
 
-Input validation included
+Clear formatted schedule display
 
 🎬 MOVIE SCHEDULING OPERATIONS
-➕ Add Movie Schedule
+➕ Input Movie Timings
 
-Input:
+User inputs:
 
-Movie ID
+Start time of each movie
 
-Movie Name
+End time of each movie
 
-Show Time
+🗂️ Sorting Process
 
-Date
+Movies are sorted in increasing order of ending time to ensure optimal selection.
 
-Screen Number
+🎯 Greedy Selection Logic
 
-Ticket Price
+Select the movie that finishes first
 
-Stored in movie.txt (binary format)
+Only select the next movie if its start time is greater than or equal to the previously selected movie’s end time
 
-📋 Display All Schedules
+📤 Output
 
-Prints all saved movie schedule records in a professionally formatted table.
+The program displays:
 
-🔍 Search Schedule
+A list of selected movies
 
-Search by Movie ID (unique identifier)
+Their start & end times
 
-✏️ Update Schedule
-
-Modify existing schedule details such as movie name, time, date, or ticket price.
-
-❌ Delete Schedule
-
-Removes a schedule permanently using temporary file handling for safety.
+Total number of movies scheduled without overlapping
 
 🔧 DATA MANAGEMENT
 
-Fast & efficient binary file storage
+Data is stored in memory (arrays of structures)
 
-Safe update/delete operations
+Sorting + Greedy strategy ensures efficient scheduling
 
-Handles empty/missing data files gracefully
+No external files used
 
 🔄 PROGRAM FLOW
 
-Menu runs in a loop
+User enters the number of movies
 
-Each option displays success or error messages
+User provides start & end times for each
 
-Includes Exit option
+Program sorts all movies by end time
 
-▶️ Running the Program
+Greedy algorithm selects non-overlapping movies
+
+Final optimal schedule displayed
+
+Total number of movies shown
+
+Program terminates
+
+▶️ HOW TO RUN THE PROGRAM
 1️⃣ Compile
+
+Use any C compiler (e.g., GCC):
+
 gcc movie.c -o movie
 
 2️⃣ Run
@@ -145,28 +127,16 @@ Linux / macOS:
 Windows:
 movie.exe
 
-3️⃣ Data File
+📸 OPTIONAL SCREENSHOTS
 
-Automatically creates movie.txt
+(You can insert your images here)
 
-Stores all schedule records in binary format
+Input screen
 
-📸 Screenshots (Optional)
+Movie time scheduling
 
-(Replace with your actual screenshots)
+Total movies displayed
 
-Add Schedule
+📝 AUTHOR
 
-Display Schedules
-
-Search Schedule
-
-Update Schedule
-
-Delete Schedule
-
-Exit Program
-
-📝 Author
-
-M.Jaswanth
+J. Muni Bhargav Reddy
