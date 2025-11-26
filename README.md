@@ -1,15 +1,92 @@
-The Movie Scheduling System is a simple console-based application developed using the C programming language. The purpose of this project is to manage movie schedules by enabling users to add movies, display the list of available movie schedules, and update show timings.
+🎬 MOVIE SCHEDULING SYSTEM (C Programming)
+📄 ABSTRACT
 
-This program uses structures and arrays to store essential movie details such as Movie ID, Name, Show Time, and Ticket Price. It supports up to 10 movie schedules and uses a menu-driven interface to make the application easy to navigate.
+The Movie Scheduling System is a terminal-based application developed in C that helps manage movie show schedules efficiently for cinemas or multiplexes.
+It allows users to add, view, search, update, and delete movie schedule records using a simple menu-driven interface.
 
-This project demonstrates core programming concepts such as structures, arrays, loops, conditional statements, and modular programming using functions. It is ideal for beginners who want to develop practical and real-time applications using the C language.
+All schedule data is stored in a binary file (movie.txt) to ensure persistence across multiple program runs.
 
-FUNCTIONAL REQUIREMENTS
-✔ 1. Add Movie Schedule
+This project highlights essential C programming concepts like structures, file handling, loops, conditional statements, and modular programming—making it ideal for beginners, academic submissions, and practical learning.
 
-The user can add a new movie to the system.
+✨ FEATURES
+Core Functionalities
 
-Inputs required:
+🎬 Add New Movie Schedule
+(Movie ID, Movie Name, Show Time, Date, Screen No, Ticket Price)
+
+📋 Display All Movie Schedules
+Formatted table view for easy readability
+
+🔍 Search Schedule by Movie ID
+
+✏️ Update Schedule Information
+
+❌ Delete Movie Schedule Record
+
+💾 Persistent Data Storage in binary file (movie.txt)
+
+🖥️ Fully Terminal-Based & Menu-Driven
+
+👨‍💻 Beginner-friendly modular code
+
+⚙️ Automatically creates movie.txt if missing
+
+⚠️ Includes basic input validation & error handling
+
+🛠️ TECHNICAL REQUIREMENTS
+System Requirements
+
+Operating System: Windows / Linux / macOS
+
+Terminal or Command Prompt
+
+Minimum 4 MB RAM
+
+Small disk space for movie.txt
+
+Software Requirements
+
+C Compiler: GCC / Clang / MSVC / MinGW
+
+Code Editor: VS Code / Code::Blocks / Dev-C++ / Turbo C / etc.
+
+(Optional) Make utility
+
+Programming Requirements
+
+Language: C
+
+Standard: C89 / C99 / C11
+
+Header Files Used:
+
+stdio.h
+
+stdlib.h
+
+string.h
+
+File Handling
+
+Binary file storage: movie.txt
+
+Auto-creates file if not present
+
+Read/Write permissions required
+
+📌 FUNCTIONAL REQUIREMENTS
+User Interface
+
+Terminal-based CLI
+
+Clear, simple menu
+
+Input validation included
+
+🎬 MOVIE SCHEDULING OPERATIONS
+➕ Add Movie Schedule
+
+Input:
 
 Movie ID
 
@@ -17,86 +94,79 @@ Movie Name
 
 Show Time
 
-Ticket Price
+Date
 
-The movie is stored in the schedule list.
-
-✔ 2. Display All Movie Schedules
-
-Shows a complete list of all scheduled movies including:
-
-Movie ID
-
-Name
-
-Show Time
+Screen Number
 
 Ticket Price
 
-✔ 3. Update Movie Show Time
+Stored in movie.txt (binary format)
 
-The user enters a valid Movie ID.
+📋 Display All Schedules
 
-The system searches for the movie.
+Prints all saved movie schedule records in a professionally formatted table.
 
-If found:
+🔍 Search Schedule
 
-Prompts for a new show time.
+Search by Movie ID (unique identifier)
 
-Updates the record.
+✏️ Update Schedule
 
-If not found:
+Modify existing schedule details such as movie name, time, date, or ticket price.
 
-Displays: “Movie not found.”
+❌ Delete Schedule
 
-✔ 4. Exit Program
+Removes a schedule permanently using temporary file handling for safety.
 
-Closes the application safely.
+🔧 DATA MANAGEMENT
 
-PROJECT FEATURES
-Feature	Description
-Structured Data Storage	Uses struct movie to store movie information.
-Fixed Schedule Size	Stores up to 10 movie records using #define max_length 10.
-Menu-Based System	User selects operations using a number-based menu.
-Input Validation	Displays helpful messages for full list, invalid Movie IDs, or empty records.
-Modular Approach	Code divided into functions: addMovie(), displayMovies(), updateShowTime().
-SCREENSHOTS OF OUTPUT (TEXT SIMULATION)
-Screenshot 1: Main Menu
--------------------------------------
-1. Add Movie Schedule
-2. Display Movie List
-3. Update Show Time
-4. Exit
-Enter your choice:
+Fast & efficient binary file storage
 
-Screenshot 2: Adding a Movie
-Enter Movie ID: 201
-Enter Name: Avatar 2
-Enter Show Time: 7:30 PM
-Enter Ticket Price: 150
-Movie Added Successfully!
+Safe update/delete operations
 
-Screenshot 3: Display Schedules
----------------------------------------
-ID     Movie Name      Show Time     Price
-201    Avatar 2        7:30 PM       150
+Handles empty/missing data files gracefully
 
-Screenshot 4: Updating Show Time
-Enter Movie ID to Update: 201
-Enter New Show Time: 9:00 PM
-Show Time Updated Successfully!
+🔄 PROGRAM FLOW
 
-Screenshot 5: Invalid Movie
-Enter Movie ID to Update: 500
-Movie Not Found.
+Menu runs in a loop
 
-Screenshot 6: Exit Message
-Thank you for using Movie Scheduling System.
+Each option displays success or error messages
 
-ABOUT
+Includes Exit option
 
-A console-based project built using C to simulate a basic scheduling and record-management application for movies.
+▶️ Running the Program
+1️⃣ Compile
+gcc movie.c -o movie
 
-PROJECT LANGUAGE
+2️⃣ Run
+Linux / macOS:
+./movie
 
-C Programming (100%)
+Windows:
+movie.exe
+
+3️⃣ Data File
+
+Automatically creates movie.txt
+
+Stores all schedule records in binary format
+
+📸 Screenshots (Optional)
+
+(Replace with your actual screenshots)
+
+Add Schedule
+
+Display Schedules
+
+Search Schedule
+
+Update Schedule
+
+Delete Schedule
+
+Exit Program
+
+📝 Author
+
+M.Jaswanth
