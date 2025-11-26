@@ -132,11 +132,16 @@ movie.exe
 (You can insert your images here)
 
 Input screen
+<img width="244" height="23" alt="Screenshot 2025-11-26 232751" src="https://github.com/user-attachments/assets/a9150601-2778-4f8c-95bf-9475e60ce599" />
+
 
 Movie time scheduling
+<img width="308" height="268" alt="Screenshot 2025-11-26 233222" src="https://github.com/user-attachments/assets/fbc79378-554f-4d81-bf40-68b1e31cb338" />
 
 Total movies displayed
+<img width="303" height="33" alt="Screenshot 2025-11-26 233232" src="https://github.com/user-attachments/assets/69e68731-3bb0-4198-a402-d5f10cf62224" />
+
 
 📝 AUTHOR
 
-J. Muni Bhargav Reddy
+M.Jaswanth
