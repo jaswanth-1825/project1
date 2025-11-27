@@ -132,14 +132,18 @@ movie.exe
 (You can insert your images here)
 
 Input screen
-<img width="244" height="23" alt="Screenshot 2025-11-26 232751" src="https://github.com/user-attachments/assets/a9150601-2778-4f8c-95bf-9475e60ce599" />
+<img width="284" height="22" alt="Screenshot 2025-11-27 125757" src="https://github.com/user-attachments/assets/5ce6f90b-e709-4041-adbe-0cb7e55329c3" />
+
 
 
 Movie time scheduling
-<img width="308" height="268" alt="Screenshot 2025-11-26 233222" src="https://github.com/user-attachments/assets/fbc79378-554f-4d81-bf40-68b1e31cb338" />
+<img width="546" height="444" alt="Screenshot 2025-11-27 125833" src="https://github.com/user-attachments/assets/178006a2-d665-4ee6-9959-40293b1dfba4" />
+
 
 Total movies displayed
-<img width="303" height="33" alt="Screenshot 2025-11-26 233232" src="https://github.com/user-attachments/assets/69e68731-3bb0-4198-a402-d5f10cf62224" />
+<img width="508" height="161" alt="Screenshot 2025-11-27 125840" src="https://github.com/user-attachments/assets/a3d3e5bf-9dfc-426c-83ed-961a80d5dfb1" />
+
+
 
 
 📝 AUTHOR
